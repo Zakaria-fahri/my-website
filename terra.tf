@@ -5,7 +5,6 @@ provider "oci" {
   private_key_path    = "<path_to_your_private_key>"
   region              = "<oci_region>"
 }
-
 resource "oci_core_virtual_network" "vcn" {
   cidr_block = "10.0.0.0/16"
   display_name = "my_vcn"
